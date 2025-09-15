@@ -1,0 +1,6 @@
+def addSquares(iRange):
+    length = 25
+    for i in range(iRange):
+        addSquares(length, 90)
+        length += 25
+addSquares(5)
