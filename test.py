@@ -1,19 +1,24 @@
 import turtle
 from turtle import *
 t = Turtle()
-t.shape = 'turtle'
 
-def square(x,y):
-    for i in range(4):
-        t.forward(x)
-        t.left(y)
+t.speed(0)
+
+t.shape('turtle')
+def star(length,deg):
+    for i in range(5):
+        t.forward(length)
+        t.right(deg)
 # square(100,90)
 
-def doubleSquares(iRange):
+    
+
+
+def addStars(iRange):
     length = 25
     for i in range(iRange):
-        square(length, 90)
-        length = length * 2
-doubleSquares(5)
-
+        star(length, 144)
+        length += 10
+        t.right(5)
+addStars(60)
 turtle.done()
